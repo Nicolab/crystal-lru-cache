@@ -1,0 +1,18 @@
+name: lru-cache
+version: 1.0.0
+crystal: 0.36.1
+license: MIT
+
+authors:
+  - Nicolas Talle <dev@nicolab.net>
+
+targets:
+  craft-auth:
+    main: src/lru_cache.cr
+
+crystalline:
+  main: spec/lru_cache_spec.cr
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
