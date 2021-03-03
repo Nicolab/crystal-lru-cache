@@ -6,7 +6,7 @@
 # ------------------------------------------------------------------------------
 
 require "spec"
-require "../src/lru_cache"
+require "../src/lru-cache"
 
 alias Cache = LRUCache(Symbol, String)
 alias LifecycleCache = LifecycleLRUCache(Symbol, String)
