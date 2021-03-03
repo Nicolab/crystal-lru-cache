@@ -2,7 +2,7 @@
 
 [![CI Status](https://github.com/Nicolab/crystal-lru-cache/workflows/CI/badge.svg?branch=master)](https://github.com/Nicolab/crystal-lru-cache/actions) [![GitHub release](https://img.shields.io/github/release/Nicolab/crystal-lru-cache.svg)](https://github.com/Nicolab/crystal-lru-cache/releases) [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://nicolab.github.io/crystal-lru-cache/)
 
-:gem: Simple key/value LRU cache that supports lifecycle, global size limit and expiration time.
+:gem: Key/value LRU cache that supports lifecycle, global size limit and expiration time.
 
 > LRU: Least Recently Used
 
@@ -21,7 +21,7 @@ A caching system is a vital part, it must be simple to use, reliable and efficie
    dependencies:
      lru-cache:
        github: nicolab/crystal-lru-cache
-       version: ~> 1.0.0 # Check the latest version!
+       version: ~> 1.0.1 # Check the latest version!
 ```
 
 2. Run `shards install`
@@ -44,7 +44,7 @@ puts cache.has?("hello") # => true
 # Time limit
 cache.set("hello", "Hello Crystal!", Time.utc + 1.hour)
 
-puts cache.expire_at "hello # => Time.utc + 1.hour
+puts cache.expire_at "hello" # => Time.utc + 1.hour
 
 # Deletes "hello" item
 cache.delete "hello"
