@@ -21,7 +21,7 @@ A caching system is a vital part, it must be simple to use, reliable and efficie
    dependencies:
      lru-cache:
        github: nicolab/crystal-lru-cache
-       version: ~> 1.0.1 # Check the latest version!
+       version: ~> 1.0.3 # Check the latest version!
 ```
 
 2. Run `shards install`
