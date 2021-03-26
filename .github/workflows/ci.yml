@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-18.04
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     container:
-      image: crystallang/crystal:0.36.1-alpine
+      image: crystallang/crystal:1.0.0
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
